@@ -1,31 +1,13 @@
-Input ← $ MMMSXXMASM
-        $ MSAMXMSMSA
-        $ AMXSXMAAMM
-        $ MSAMASMSMX
-        $ XMASAMXAMM
-        $ XXAMMXXAMA
-        $ SMSMSASXSS
-        $ SAXAMASAAA
-        $ MAMMMXMMMM
-        $ MXMXAXMASX
+Map ← ⊜∘≠@\n.&fras"input"
 
-InputTwo ← $ ....XXMAS.
-           $ .SAMXMS...
-           $ ...S..A...
-           $ ..A.A.MS.X
-           $ XMASAMX.MM
-           $ X.....XA.A
-           $ S.S.S.S.SS
-           $ .A.A.A.A.A
-           $ ..M.M.M.MM
-           $ .X.X.XMASX
+/+/+/+[⊃(
+    ⌕"XMAS"
+  | ⌕"SAMX"
+  | ⊃(⌕"XMAS"
+    | ⌕"SAMX"
+    )⍉
+  )] Map
 
-⊜∘≠@\n.InputTwo
-[⊃⊃⊃⟜≡⇌⍉(≡⇌⍉)]
-⊃(/+/+/+≡≡(⌕"XMAS"))(
-  /+≡(
-    ⊙¤≡↻⇡:¤⊞=.⇡.⧻.
-    /+/+≡(⊕(/+⌕"XMAS")\+↻¯1⊢↘1⍉=9-↻1.⟜⊡⊚)
-  )
-)
+⊚⌕@X Map [⟜¯[0_0 1_1 2_2 3_3] ⟜≡⇌[¯0_0 ¯1_1 ¯2_2 ¯3_3]]
+/+/+⌕"XMAS"≡≡(⬚@ ⊡:Map)▽¬/↥/↥⍉<0./⊂⊞(+¤)
 +
