@@ -1,10 +1,13 @@
-Input       ← &fras"input"
-Map         ← ⊜∘≠@\n.Input
-Bounds      ← △Map
-Frequencies ← ▽¬∈"\n.".◴Input
+Input  ← &fras"input"
+Map    ← ⊜∘≠@\n.Input
+Bounds ← △Map
 
-/◇⊂≡(□/⊂⊞(⊂∩□).⊚=)Frequencies¤Map
-◴/⊂≡(⊂⊙+-⟜:⊃(/-|°⊟))▽≡(≠°⊟.)
-▽≡(/↧/◇↧≥[0 0].)
-▽≡(/↧/◇↧<Bounds.)
+▽¬∊"\n.".◴Input¤Map
+◴/◇⊂♭⊞(
+  ⧅<2⊚=
+  □◴/◇⊂≡(
+    ⊙¯,⟜:⊙¤⊸-°⊟
+    □◴⊂∩(↘1⊙◌⍢(⊂+⊢,,|↧⊃(/↧≥0|/↧<Bounds)⊢))
+  )
+)
 ⧻
